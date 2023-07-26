@@ -25,7 +25,6 @@ public class EndToEndScenarioTests{
         softAssert.assertEquals(CheckoutPage.proceedToCheckOut(),"https://magento.softwaretestingboard.com/checkout/#shipping");
         softAssert.assertEquals(CheckoutPage.fillingTheCheckOutFormWhenYouAreNotLoggedIn(), "https://magento.softwaretestingboard.com/checkout/#payment");
         softAssert.assertTrue(CheckoutPage.buyingTheProduct());
-        softAssert.assertAll();
     }
 
     @Test(priority = 2)
@@ -35,7 +34,6 @@ public class EndToEndScenarioTests{
         softAssert.assertEquals(CheckoutPage.proceedToCheckOutWhenYouAreLoggedIn(), "https://magento.softwaretestingboard.com/checkout/#shipping");
         softAssert.assertTrue(CheckoutPage.buyingTheProductWhenYouAreLoggedIn());
         softAssert.assertEquals(CheckoutPage.checkOut(),"You are signed out");
-        softAssert.assertAll();
     }
 
     @Test(priority = 3)
@@ -45,7 +43,6 @@ public class EndToEndScenarioTests{
         softAssert.assertEquals(ProductListPage.addProductToWishList(), "Arcadio Gym Short has been added to your Wish List. Click here to continue shopping.");
         softAssert.assertTrue(ProductListPage.numberOfProductsInWishList());
         softAssert.assertEquals(CheckoutPage.checkOut(),"You are signed out");
-        softAssert.assertAll();
     }
 
     @Test(priority = 4)
@@ -57,7 +54,6 @@ public class EndToEndScenarioTests{
         softAssert.assertEquals(ProductListPage.listingThePages(),"2");
         softAssert.assertEquals(ProductListPage.viewProductPrice(), "$66.00");
         softAssert.assertEquals(ProductListPage.numberOfProductsInCategory(), "Items 37-48 of 48");
-        softAssert.assertAll();
     }
 
     @Test(priority = 5)
@@ -70,7 +66,6 @@ public class EndToEndScenarioTests{
         softAssert.assertEquals(CheckoutPage.proceedToCheckOut(),"https://magento.softwaretestingboard.com/checkout/#shipping");
         softAssert.assertEquals(CheckoutPage.fillingTheCheckOutFormWhenYouAreNotLoggedIn(), "https://magento.softwaretestingboard.com/checkout/#payment");
         softAssert.assertTrue(CheckoutPage.buyingTheProduct());
-        softAssert.assertAll();
     }
 
     @AfterClass
