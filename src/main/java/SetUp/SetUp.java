@@ -9,7 +9,7 @@ public class SetUp {
     public static WebDriverWait wait;
 
     public static void setup() {
-        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver-v115.exe");
         driver = new ChromeDriver();
         wait = new WebDriverWait(driver, 10);
         driver.manage().window().maximize();
